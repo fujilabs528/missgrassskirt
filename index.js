@@ -11,14 +11,13 @@ app.use(cors({origin: true}))
 const path = require('path')
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join('react-ecommerce/build/index.html'));
+    res.sendFile(path.join('./react-ecommerce/build/index.html'));
 });
 
 app.post("/create-checkout-session", createCheckoutSession)
 
 app.listen(port, () => console.log("xxx server listening xxxyyy", port))
 
-console.log(__dirname + './react-ecommerce/public/index.html')
 
 
 
