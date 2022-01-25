@@ -11,7 +11,7 @@ app.use(cors({origin: true}))
 const path = require('path')
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + './react-ecommerce/public/index.html'));
+    res.sendFile(path.join('react-ecommerce/build/index.html'));
 });
 
 app.post("/create-checkout-session", createCheckoutSession)
