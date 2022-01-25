@@ -9,7 +9,23 @@ const port = process.env.PORT || 80
 app.use(express.json())
 app.use(cors({origin: true}))
 
-app.get("/", (req, res) => res.send("Hello xxxyyy"))
+
+
+const path = require("path");
+
+if (process.env.NODE_ENV === "production") {
+
+    app.use(express.static("react-ecommerce/build"));
+
+    app.get("*", (req, res) => {
+
+    res.sendFile(path.resolve(__dirname, "react-ecommerce", "build", "index.html"));
+
+   });
+
+}
+
+
 
 app.post("/create-checkout-session", createCheckoutSession)
 
