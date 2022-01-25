@@ -8,16 +8,17 @@ const port = process.env.PORT || 80
 
 app.use(express.json())
 app.use(cors({origin: true}))
-
-app.get("/", (req, res) => res.send("Hello xxxyyy"))
+const path = require('path')
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + 'react-ecommerce/public/index.html'));
+    res.sendFile(path.join(__dirname + './react-ecommerce/public/index.html'));
 });
 
 app.post("/create-checkout-session", createCheckoutSession)
 
 app.listen(port, () => console.log("xxx server listening xxxyyy", port))
+
+console.log(__dirname + './react-ecommerce/public/index.html')
 
 
 
