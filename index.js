@@ -9,11 +9,11 @@ const port = 80
 app.use(express.json())
 app.use(cors({origin: true}))
 
-app.get("/", (req, res) => res.send("Hello xxx"))
+app.get("/", (req, res) => res.send("Hello xxxyyy"))
 
 app.post("/create-checkout-session", createCheckoutSession)
 
-app.listen(port, () => console.log("server listening xxxyyy", port))
+app.listen(port, () => console.log("xxx server listening xxxyyy", port))
 
 
 
