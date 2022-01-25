@@ -10,11 +10,10 @@ app.use(express.json())
 app.use(cors({origin: true}))
 
 const path = require("path");
-app.get("*", (req, res) => {
 
-res.sendFile(path.resolve(__dirname, "react-ecommerce", "build", "index.html"));
-
-   });
+app.get("/*", (req, res) => {
+    res.send(path.join(__dirname, "react-ecommerce", "build", "index.html"));
+});
 
 
 
