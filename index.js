@@ -5,19 +5,15 @@ const createCheckoutSession= require("./api/checkout")
 
 const app = express()
 const port = process.env.PORT || 80
-const path = require('path');
 
 app.use(express.json())
 app.use(cors({origin: true}))
 
+app.get("/", (req, res) => res.send("Hello xxxyyy"))
 
-app.use('/static', express.static(path.join(`${__dirname}/react-ecommerce/build`)));
-
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(`${__dirname}/react-ecommerce/build/`));
-  });
-
-
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + 'react-ecommerce/public/index.html'));
+});
 
 app.post("/create-checkout-session", createCheckoutSession)
 
