@@ -4,7 +4,7 @@ require("dotenv").config({ path: "./.env"})
 const createCheckoutSession= require("./api/checkout")
 
 const app = express()
-const port = 80
+const port = "0.0.0.0"
 
 app.use(express.json())
 app.use(cors({origin: true}))
