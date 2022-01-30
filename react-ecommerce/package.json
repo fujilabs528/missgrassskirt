@@ -2,7 +2,7 @@
   "name": "react-ecommerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xxyyaa.herokuapp.com/",
+  "homepage": ".",
 
 
 
@@ -29,10 +29,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "build-localhost": "WEB_APP_URL=/ react-scripts build",
+    "build": "react-scripts build",
 
 
     "predeploy": "npm run build",

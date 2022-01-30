@@ -14,7 +14,7 @@ const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 ReactDOM.render(
   <BrowserRouter>
-    <ProductsContextProvider>
+    <ProductsContextProvider> 
       <CartContextProvider>
         <Elements stripe={stripePromise}>
           <UserContextProvider>
