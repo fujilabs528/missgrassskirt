@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors({origin: true}))
 const path = require('path')
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
     res.sendFile(path.resolve('./react-ecommerce/build/index.html'));
 });
 
