@@ -8,7 +8,8 @@ ls# See https://help.github.com/articles/ignoring-files/ for more about ignoring
 # testing
 /coverage
 
-# production
+# production - doesn't refer to npm run build- 
+#refers to the "build" file like how "node_modules" is ignored 013022
 
 
 # misc
