@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e77cbdc6.css",
+    "main.js": "./static/js/main.a07d2a41.js",
+    "static/js/787.341f04ca.chunk.js": "./static/js/787.341f04ca.chunk.js",
+    "static/media/ben-white-unsplash.jpg": "./static/media/ben-white-unsplash.4d742d9dfa39bdea943a.jpg",
+    "static/media/studio-bag.png": "./static/media/studio-bag.0f3196edd8f96de6d41c.png",
+    "index.html": "./index.html",
+    "main.e77cbdc6.css.map": "./static/css/main.e77cbdc6.css.map",
+    "main.a07d2a41.js.map": "./static/js/main.a07d2a41.js.map",
+    "787.341f04ca.chunk.js.map": "./static/js/787.341f04ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e77cbdc6.css",
+    "static/js/main.a07d2a41.js"
+  ]
+}
